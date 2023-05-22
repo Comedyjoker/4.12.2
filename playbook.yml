@@ -3,7 +3,7 @@
  hosts: "ubuntu_python"
  become: false
  vars:
-   app_name: "hello"
+   app_name: "hellohi"
    mysql_password: "password"
    ansible_pythonr_interpreter: /usr/bin/python3
  tasks:
