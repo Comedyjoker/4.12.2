@@ -14,7 +14,7 @@
       dest: /apps/{{app_name}}
       owner: vagrant
       group: vagrant
-      mode: 0644
+      mode: 0755
 
   - name: Install virtualenv via pip
     pip:
@@ -33,7 +33,7 @@
       dest: /etc/systemd/system/{{app_name}}.service
       owner: vagrant
       group: vagrant
-      mode: 0644
+      mode: 0755
 
   - name: "Add the MySQL database"
     community.mysql.mysql_db:
